@@ -2,6 +2,6 @@ const express = require('express');
 
 const app = express();
 
-app.get('/cidades', () => {
-    res.send('cidade')
+app.get('/cidades', (req, res, next) => {
+    res.send('tes')
 })
