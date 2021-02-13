@@ -1,6 +1,7 @@
 const express = require('express')
 const router = express.Router()
 const cidades = require('../models/citiesModel')
+const states = require('../models/statesModel')
 
 router.use((req, res, next) => {
     console.log('Time: ', Date.now())
@@ -14,7 +15,7 @@ router.get('/cidades', (req, res) => {
 })
 
 router.get('/estados', (req, res) => {
-    cidades.then(result => {
+    states.then(result => {
         res.send(result)
     })
 })
