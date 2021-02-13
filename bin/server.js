@@ -1,15 +1,11 @@
-const app = require('../src/app');
-const port = normalizaPort(process.env.PORT || '3000');
-function normalizaPort(val) {
-    const port = parseInt(val, 10);
-    if (isNaN(port)) {
-        return val;
-    }
-if (port >= 0) {
-        return port;
-    }
-return false;
-}
+const express = require('express')
+const app = express()
+const port = 3000
+
+const birds = require('../src/routes/birds.js')
+
+app.use('/birds', birds)
+
 app.listen(port, function () {
     console.log(`app listening on port ${port}`)
 })
