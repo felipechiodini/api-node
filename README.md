@@ -1,8 +1,8 @@
-<h1>Node js e Express js</h1>
+<h1>API feita em Node e Express</h1>
 
-<h1>Montando ambiente de desenvolvimento</h1>
+<h3>Montando ambiente de desenvolvimento</h3>
 
 <ul>
     <li>npm install para baixar dependências</li>
-    <li>'npm start' para rodar nodemon</li>
+    <li>npm start para rodar nodemon</li>
 </ul>
